@@ -14,7 +14,7 @@
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -57,11 +57,14 @@
               class="img-fluid rounded-circle"
             />
           </a>
-          <h1 class="text-light"><a href="index.html">Sanskar Kashyap</a></h1>
+          <h1 class="text-light glitch-title" data-text="SANSKAR">
+            <a href="index.html">SANSKAR</a>
+          </h1>
+          <p class="profile-tagline">CYBER OPS // ZERO-DAY PURSUIT</p>
           <div class="social-links mt-3 text-center">
             <a href="https://github.com/SanskarKashyap" class="github"><i class="bx bxl-github"></i></a>
-            <a href="https://twitter.com/KashyapZi" class="twitter"><i class="bx bxl-twitter"></i></a> 
-            <a href="https://play.picoctf.org/users/SanskarKashyap308" class="picoCTF"><i class="bx bxl-tux"></i></a>
+            <a href="https://twitter.com/KashyapZi" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="https://play.picoctf.org/users/SanskarKashyap308" class="picoctf"><i class="bx bxl-tux"></i></a>
             <a href="https://www.linkedin.com/in/sanskar-kashyap-426910201/"class="linkedin"><i class="bx bxl-linkedin"></i></a>
           </div>
         </div>
@@ -106,19 +109,22 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section
-      id="hero"
-      class="d-flex flex-column justify-content-center align-items-center"
-    >
-      <div class="hero-container" data-aos="fade-in">
-        <h1>Sanskar Kashyap</h1>
-        <p>
-          I'm
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="hero-grid"></div>
+      <div class="hero-noise"></div>
+      <div class="hero-container" data-aos="zoom-in" data-aos-delay="200">
+        <h1 class="hero-name glitch-title" data-text="SANSKAR">SANSKAR</h1>
+        <p class="hero-subtitle">
+          <span class="hero-prefix">Operating as</span>
           <span
             class="typed"
-            data-typed-items="Ethical Hacker, Developer, Traveler, Photographer"
+            data-typed-items="Cyber Security Analyst,CTF Specialist,Threat Hunter,Offensive Security Researcher"
           ></span>
         </p>
+        <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+          <a href="#portfolio" class="cyber-btn primary">Enter Portfolio</a>
+          <a href="#contact" class="cyber-btn ghost">Ping Me</a>
+        </div>
       </div>
     </section>
     <!-- End Hero -->
@@ -130,24 +136,13 @@
           <div class="section-title">
             <h2>About</h2>
             <p>
-              Dedicated and innovative professional with a passion for shaping
-              the future of cybersecurity. Motivated by challenges, I thrive in
-              dynamic environments, bringing analytical agility and influential
-              leadership to deliver meaningful results. I am poised to make a
-              significant impact in the ever-evolving landscape of information
-              technology.
+              Cybersecurity Analyst specializing in penetration testing and vulnerability management, with experience uncovering 60+ flaws across web, mobile, and infrastructure systems at TCS. Skilled in Burp Suite, Metasploit, AWS, and Python automation, with proven ability to reduce remediation cycles by 20% and deliver actionable security improvements. Ranked in the Top 20 at national CTFs and active speaker at NULL community events. Leveraging Generative AI to accelerate vulnerability detection, automate reporting, and enhance threat simulation workflows.
             </p>
           </div>
-
           <div class="row">
-            <div class="col-lg-4" data-aos="fade-right">
-              <img src="assets/img/profile-img.jpg" class="img-fluid" alt="" />
-            </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
               <h3>Ethical Hacker</h3>
-              <p class="fst-italic">
-                I only hack ethically – because jail doesn't have Wi-Fi!              </p>
-              <div class="row">
+                 <div class="row">
                 <div class="col-lg-6">
                   <ul>
                     <li>
@@ -157,7 +152,7 @@
                     <li>
                       <i class="bi bi-chevron-right"></i>
                       <strong>Website:</strong>
-                      <span><a href="SanskarKashyap.github.io">sanskarKashyap.github.io</a></span>
+                      <span><a href="https://sanskarkashyap.xyz/">sanskarkashyap.xyz</a></span>
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
@@ -172,21 +167,13 @@
                 <div class="col-lg-6">
                   <ul>
                     <li>
-                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                      <span>22</span>
-                    </li>
-                    <li>
                       <i class="bi bi-chevron-right"></i>
                       <strong>Degree:</strong> <span>BTech</span>
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
-                      <strong>PhEmailone:</strong>
-                      <span>2005825@kiit.ac.in</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Freelance:</strong> <span>Available</span>
+                      <strong>Email:</strong>
+                      <span>sanskarkashyap.professional@gmail.com</span>
                     </li>
                   </ul>
                 </div>
@@ -205,172 +192,56 @@
       <!-- ======= Skills Section ======= -->
       <section id="skills" class="skills section-bg">
         <div class="container">
+
           <div class="section-title">
             <h2>Skills</h2>
-            <p>
-              Experienced in Penetration Testing, OSINT, Cryptography, and more, with expertise in tools like Wireshark, Burp Suite, and Metasploit. Proficient in Python and JS, skilled in AWS cloud security, and adept with Kali Linux, Ubuntu, and Windows.
-            </p>
           </div>
 
-          <div class="row skills-content">
-            <div class="col-lg-6" data-aos="fade-up">
-              <div class="progress">
-                <span class="skill">OOPs in C++ <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Python <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"
-                  >React and Express js <i class="val">75%</i></span
-                >
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"
-                  >Digital Forensics <i class="val">55%</i></span
-                >
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="55"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"
-                  >Penetration Testing<i class="val">90%</i></span
-                >
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h4>Tools & Frameworks</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> Burp Suite</li>
+                <li><i class="bi bi-chevron-right"></i> Nmap</li>
+                <li><i class="bi bi-chevron-right"></i> Wireshark</li>
+                <li><i class="bi bi-chevron-right"></i> MobSF</li>
+                <li><i class="bi bi-chevron-right"></i> Metasploit</li>
+                <li><i class="bi bi-chevron-right"></i> Docker</li>
+              </ul>
             </div>
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="progress">
-                <span class="skill">MySQl <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">AWS <i class="val">60%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="60"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Cryptography <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Photoshop <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="55"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <div class="progress">
-                <span class="skill"
-                  >Windows - linux <i class="val">95%</i></span
-                >
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
+            <div class="col-lg-6">
+              <h4>Programming & Scripting</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> C/C++ (OOPs)</li>
+                <li><i class="bi bi-chevron-right"></i> Python</li>
+                <li><i class="bi bi-chevron-right"></i> Bash</li>
+                <li><i class="bi bi-chevron-right"></i> JavaScript</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <h4>Cloud Security</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> AWS (IAM, S3, EC2 security best practices, misconfiguration testing)</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <h4>DevOps & Version Control</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> Git</li>
+                <li><i class="bi bi-chevron-right"></i> GitHub</li>
+                <li><i class="bi bi-chevron-right"></i> CI/CD security awareness</li>
+              </ul>
             </div>
           </div>
+
         </div>
-      </section>
-      <!-- End Skills Section -->
+      </section><!-- End Skills Section -->
 
       <!-- ======= Resume Section ======= -->
       <section id="resume" class="resume">
         <div class="container">
           <div class="section-title">
             <h2>Resume</h2>
-            <p>
-              Dedicated and innovative professional with a passion for shaping
-              the future of cybersecurity. Motivated by challenges, I thrive in
-              dynamic environments, bringing analytical agility and influential
-              leadership to deliver meaningful results. I am poised to make a
-              significant impact in the ever-evolving landscape of information
-              technology.
-            </p>
           </div>
 
           <div class="row">
@@ -389,88 +260,33 @@
                 <ul>
                   <li>Bokaro Steel City,Jharkhand, IN</li>
                   <li>+917004747318</li>
-                  <li>2005825@kiit.ac.in</li>
+                  <li>sanskarkashyap.professional@gmail.com</li>
                 </ul>
               </div>
 
               <h3 class="resume-title">Education</h3>
               <div class="resume-item">
-                <h4>Bachlors in Computer Science &amp; Engeneering</h4>
+                <h4>B.Tech</h4>
                 <h5>2020 - 2024</h5>
-                <p>
-                  <em
-                    >Kalinga Institute of Industrial Technology, Bhubaneswar,
-                    Odisha</em
-                  >
-                </p>
-                <p>
-                  Mastered Many topis here like Objeject Oriented Programing,
-                  Dynamic Programing, Computer Networks, DBMS(MySQL) with 8.85
-                  SGPA and 8.32 as CGPA
-                </p>
-              </div>
-              <div class="resume-item">
-                <h4>10+2</h4>
-                <h5>2020</h5>
-                <p><em>Chinmaya Vidyalaya, B.S.City, JH, IN</em></p>
-                <p>PCM with 80.4%</p>
-              </div>
-              <div class="resume-item">
-                <h4>10</h4>
-                <h5>2018</h5>
-                <p><em>Delhi Public School, B.S.City, JH, IN</em></p>
-                <p>
-                  89.4% with First Runner-Up in under-19 Kabaddi and Football
-                  tournament, and twice second Runner-Up in under-19 Skatting
-                  tournament
-                </p>
+                <p><em>Kalinga Institute of Industrial Technology, Bhubaneswar</em></p>
+                <p>CGPA: 8.36</p>
               </div>
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h3 class="resume-title">Professional Experience</h3>
               <div class="resume-item">
-                <h4>Junior Penetration Tester</h4>
-                <h5>2022</h5>
-                <p><em>Bhubaneswar, Odisha, IN </em></p>
+                <h4>Cyber Security Analyst</h4>
+                <h5>August 2024 - Present</h5>
+                <p><em>TCS (Tata Consultancy Services), Chennai</em></p>
                 <ul>
                   <li>
-                    Lead in the design, development, and implementation of the
-                    graphic, layout, and production communication materials
+                    Performed penetration testing on 16+ business-critical applications and infrastructure components, uncovering 60+ security flaws including OWASP Top 10 and SANS Top 25 issues, with 95% remediation acceptance from dev teams.
                   </li>
                   <li>
-                    Delegate tasks to the 7 members of the design team and
-                    provide counsel on all aspects of the project.
+                    Executed advanced attack simulations (SQLi, XSS, IDOR, privilege escalation, and misconfigurations) that exposed high-severity vulnerabilities affecting 100K+ user data, directly preventing potential breaches.
                   </li>
                   <li>
-                    Supervise the assessment of all graphic materials in order
-                    to ensure quality and accuracy of the design
-                  </li>
-                  <li>
-                    Oversee the efficient use of production project budgets
-                    ranging from $2,000 - $25,000
-                  </li>
-                </ul>
-              </div>
-              <div class="resume-item">
-                <h4>Graphic design specialist</h4>
-                <h5>2017 - 2018</h5>
-                <p><em>Stepping Stone Advertising, New York, NY</em></p>
-                <ul>
-                  <li>
-                    Developed numerous marketing programs (logos,
-                    brochures,infographics, presentations, and advertisements).
-                  </li>
-                  <li>
-                    Managed up to 5 projects or tasks at a given time while
-                    under pressure
-                  </li>
-                  <li>
-                    Recommended and consulted with clients on the most
-                    appropriate graphic design
-                  </li>
-                  <li>
-                    Created 4+ design presentations and proposals a month for
-                    clients and account managers
+                    Collaborated with developers and business stakeholders to validate fixes, provide secure coding guidance, and accelerate patch deployment, reducing average remediation time by 20%.
                   </li>
                 </ul>
               </div>
@@ -483,510 +299,102 @@
       <!-- ======= Portfolio Section ======= -->
       <section id="portfolio" class="portfolio section-bg">
         <div class="container">
+
           <div class="section-title">
-            <h2>Portfolio</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+            <h2>Achievements</h2>
           </div>
 
-          <div class="row" data-aos="fade-up">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
-                <li data-filter=".filter-web">Web</li>
+          <div class="row">
+            <div class="col-lg-12">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>2025:</strong> Top 10 Best Ethical Hacker, TCS</li>
+                <li><i class="bi bi-chevron-right"></i> <strong>2025:</strong> Top 9%, TryHackMe</li>
+                <li><i class="bi bi-chevron-right"></i> <strong>July 2025:</strong> Team Rank 161, World Wide CTF 2025</li>
+                <li><i class="bi bi-chevron-right"></i> <strong>April 2024:</strong> Team Rank 16, PANTATHON 2024 (NCIIPC India, MoE Government of India)</li>
+                <li><i class="bi bi-chevron-right"></i> <strong>2023:</strong> 61th Rank, Digital Defenders CTF (Indian Institute of Science, Cisco)</li>
               </ul>
             </div>
           </div>
 
-          <div
-            class="row portfolio-container"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-1.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-1.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="App 1"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-2.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-2.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Web 3"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-3.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-3.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="App 2"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-4.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-4.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Card 2"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-5.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-5.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Web 2"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-6.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-6.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="App 3"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-7.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-7.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Card 1"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-8.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-8.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Card 3"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-9.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-9.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Web 3"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      End Portfolio Section
+      </section><!-- End Portfolio Section -->
 
       <!-- ======= Services Section ======= -->
       <section id="services" class="services">
         <div class="container">
+
           <div class="section-title">
-            <h2>Services</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+            <h2>Community & Speaking Engagements</h2>
           </div>
 
           <div class="row">
-            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-              <div class="icon"><i class="bi bi-briefcase"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">
-                Voluptatum deleniti atque corrupti quos dolores et quas
-                molestias excepturi sint occaecati cupiditate non provident
-              </p>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 icon-box"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="icon"><i class="bi bi-card-checklist"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">
-                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat tarad limino ata
-              </p>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 icon-box"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="icon"><i class="bi bi-bar-chart"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 icon-box"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="icon"><i class="bi bi-binoculars"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum
-              </p>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 icon-box"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="icon"><i class="bi bi-brightness-high"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque
-              </p>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 icon-box"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-              <p class="description">
-                Et harum quidem rerum facilis est et expedita distinctio. Nam
-                libero tempore, cum soluta nobis est eligendi
-              </p>
+            <div class="col-lg-12">
+              <h4>NULL Speaker</h4>
+              <p><em>Bengaluru, Bhubaneswar</em></p>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> Decoding APT Strategies and TTPs Methodologies</li>
+                <li><i class="bi bi-chevron-right"></i> Mitigating Remote Access Security Risks</li>
+              </ul>
             </div>
           </div>
+
         </div>
-      </section>
-      <!-- End Services Section -->
+      </section><!-- End Services Section -->
 
       <!-- ======= Testimonials Section ======= -->
       <section id="testimonials" class="testimonials section-bg">
         <div class="container">
+
           <div class="section-title">
-            <h2>Testimonials</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+            <h2>Certifications</h2>
           </div>
 
-          <div
-            class="testimonials-slider swiper"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-item" data-aos="fade-up">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec
-                    porttitora entum suscipit rhoncus. Accusantium quam,
-                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                    risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonials-1.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div
-                  class="testimonial-item"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse
-                    labore quem cillum quid cillum eram malis quorum velit fore
-                    eram velit sunt aliqua noster fugiat irure amet legam anim
-                    culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonials-2.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div
-                  class="testimonial-item"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim
-                    sint quorum nulla quem veniam duis minim tempor labore quem
-                    eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonials-3.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div
-                  class="testimonial-item"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                    multos export minim fugiat minim velit minim dolor enim duis
-                    veniam ipsum anim magna sunt elit fore quem dolore labore
-                    illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonials-4.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div
-                  class="testimonial-item"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                >
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure
-                    aliqua veniam tempor noster veniam enim culpa labore duis
-                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
-                    fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonials-5.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
+          <div class="row">
+            <div class="col-lg-12">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> AWS Certified Cloud Practitioner - AWS</li>
+                <li><i class="bi bi-chevron-right"></i> DSA using C and C++ - Abdul Bari</li>
+                <li><i class="bi bi-chevron-right"></i> The Bits & Bytes of Computer Networking - Google</li>
+              </ul>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
+
         </div>
-      </section>
-      <!-- End Testimonials Section -->
+      </section><!-- End Testimonials Section -->
 
       <!-- ======= Contact Section ======= -->
       <section id="contact" class="contact">
         <div class="container">
+
           <div class="section-title">
             <h2>Contact</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
           </div>
 
           <div class="row" data-aos="fade-in">
+
             <div class="col-lg-5 d-flex align-items-stretch">
               <div class="info">
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>Chennai</p>
                 </div>
 
                 <div class="email">
                   <i class="bi bi-envelope"></i>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>sanskarkashyap.professional@gmail.com</p>
                 </div>
 
                 <div class="phone">
                   <i class="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
+                  <p>+917004747318</p>
                 </div>
-
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                  frameborder="0"
-                  style="border: 0; width: 100%; height: 290px"
-                  allowfullscreen
-                ></iframe>
               </div>
             </div>
 
-            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <div class="col-lg-7 mt-4 mt-lg-0 d-flex align-items-stretch">
               <form
                 action="forms/contact.php"
                 method="post"
@@ -1005,7 +413,7 @@
                     />
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="name">Your Email</label>
+                    <label for="email">Your Email</label>
                     <input
                       type="email"
                       class="form-control"
@@ -1016,7 +424,7 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="name">Subject</label>
+                  <label for="subject">Subject</label>
                   <input
                     type="text"
                     class="form-control"
@@ -1026,45 +434,36 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for="name">Message</label>
+                  <label for="message">Message</label>
                   <textarea
                     class="form-control"
                     name="message"
-                    rows="10"
+                    id="message"
+                    rows="8"
                     required
                   ></textarea>
                 </div>
                 <div class="my-3">
-                  <div class="loading">Loading</div>
+                  <div class="loading">Transmitting</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
+                  <div class="sent-message">Signal received. Talk soon.</div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Send Message</button>
+                  <button type="submit">Deploy Message</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Contact Section -->
+      </section><!-- End Contact Section -->
     </main>
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><span>iPortfolio</span></strong>
-        </div>
+      <div class="container">     
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+         Designed by <a href="https://SanskarKashyap.github.io">Sanskar Kashyap</a>
         </div>
       </div>
     </footer>

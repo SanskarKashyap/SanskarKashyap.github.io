@@ -136,10 +136,47 @@
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+      typeSpeed: 70,
+      backSpeed: 38,
+      backDelay: 2200,
+      smartBackspace: true
     });
+  }
+
+  /**
+   * Hero interactive tilt
+   */
+  const heroPanel = select('#hero .hero-container')
+  if (heroPanel) {
+    const setTilt = (x, y) => {
+      heroPanel.style.setProperty('--tiltX', `${y}deg`)
+      heroPanel.style.setProperty('--tiltY', `${x}deg`)
+    }
+
+    const handlePointerMove = (event) => {
+      if (event.pointerType && event.pointerType !== 'mouse') return
+      const rect = heroPanel.getBoundingClientRect()
+      const relativeX = (event.clientX - (rect.left + rect.width / 2)) / rect.width
+      const relativeY = (event.clientY - (rect.top + rect.height / 2)) / rect.height
+      const maxTilt = 8
+      setTilt((-relativeY * maxTilt).toFixed(2), (relativeX * maxTilt).toFixed(2))
+    }
+
+    heroPanel.addEventListener('pointermove', handlePointerMove)
+    heroPanel.addEventListener('pointerenter', (event) => {
+      if (event.pointerType && event.pointerType !== 'mouse') return
+      heroPanel.classList.add('is-hovering')
+    })
+    const resetTilt = () => {
+      heroPanel.classList.remove('is-hovering')
+      setTilt(0, 0)
+    }
+
+    heroPanel.addEventListener('pointerleave', (event) => {
+      if (event.pointerType && event.pointerType !== 'mouse') return
+      resetTilt()
+    })
+    heroPanel.addEventListener('pointercancel', resetTilt)
   }
 
   /**
@@ -258,5 +295,44 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
+
+  /**
+   * Redirect contact form submissions to WhatsApp
+   */
+  const contactForm = select('.php-email-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (event) => {
+      if (!contactForm.checkValidity()) {
+        event.preventDefault();
+        contactForm.reportValidity();
+        return;
+      }
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+
+      const name = contactForm.querySelector('[name="name"]').value.trim();
+      const email = contactForm.querySelector('[name="email"]').value.trim();
+      const subject = contactForm.querySelector('[name="subject"]').value.trim();
+      const message = contactForm.querySelector('[name="message"]').value.trim();
+
+      const textLines = [
+        `Hello, my name is ${name}.`,
+        `Email: ${email}`,
+        `Subject: ${subject}`,
+        `Message: ${message}`
+      ];
+
+      const whatsappUrl = new URL('https://api.whatsapp.com/send/');
+      whatsappUrl.search = new URLSearchParams({
+        phone: '917004747318',
+        text: textLines.join('\n'),
+        type: 'phone_number',
+        app_absent: '0'
+      }).toString();
+
+      window.location.href = whatsappUrl.toString();
+    }, true);
+  }
 
 })()
