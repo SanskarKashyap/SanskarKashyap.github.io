@@ -194,8 +194,8 @@ p {
   padding-right: 30px;
 }
 
-section > .container,
-section > .container-fluid {
+section>.container,
+section>.container-fluid {
   position: relative;
   background: linear-gradient(160deg, rgba(7, 14, 30, 0.92), rgba(7, 22, 48, 0.7));
   border-radius: 24px;
@@ -220,8 +220,8 @@ section > .container-fluid {
     padding-right: 12px;
   }
 
-  section > .container,
-  section > .container-fluid {
+  section>.container,
+  section>.container-fluid {
     padding: 48px 28px;
   }
 }
@@ -231,8 +231,8 @@ section > .container-fluid {
     padding: 60px 0;
   }
 
-  section > .container,
-  section > .container-fluid {
+  section>.container,
+  section>.container-fluid {
     padding: 32px 20px;
     border-radius: 18px;
   }
@@ -349,9 +349,14 @@ section > .container-fluid {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: radial-gradient(circle at 30% 20%, rgba(0, 255, 191, 0.15), transparent 45%),
-    radial-gradient(circle at 70% 25%, rgba(255, 0, 211, 0.18), transparent 55%),
+  background: radial-gradient(circle at 30% 20%, rgba(0, 255, 191, 0.15), transparent 75%),
+    radial-gradient(circle at 70% 25%, rgba(255, 0, 211, 0.18), transparent 75%),
+    url("../img/hero-bg-new.jpg"),
     var(--bg-secondary);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
 }
 
 @media (min-width: 1200px) {
@@ -559,22 +564,27 @@ section > .container-fluid {
     transform: translate(0);
     opacity: 0.4;
   }
+
   20% {
     transform: translate(-2px, 1px);
     opacity: 0.6;
   }
+
   40% {
     transform: translate(2px, -1px);
     opacity: 0.6;
   }
+
   60% {
     transform: translate(-1px, 1px);
     opacity: 0.5;
   }
+
   80% {
     transform: translate(1px, -1px);
     opacity: 0.4;
   }
+
   100% {
     transform: translate(0);
     opacity: 0.6;
@@ -603,6 +613,7 @@ section > .container-fluid {
   0% {
     transform: translateY(0) translateX(0);
   }
+
   100% {
     transform: translateY(60px) translateX(60px);
   }
